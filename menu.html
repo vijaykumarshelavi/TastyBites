@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+  <div class="loader">
+    <div class="loading-screen">
+      <img src="foodgif.gif" alt="Food Loading">
+    </div>
+    </div>
+     <div class="content" style="display: none;">
+  <header>
+    <div class="topnav" id="myTopnav">
+      <img src="logo.png" style="width: 45px;height: 45px; float: left;"><h4 style="float: left; margin-top: 12px;font-family: 'Sofia', sans-serif; color: brown;"><b>Tasty Bites</b></h4>
+
+      <div class="box">
+        <div class="cart-count">0</div>
+        <i class="fa-solid fa-cart-shopping" style="color: #f2f2f3;" id="cart-icon" ></i>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">     
+      <i class="fa-solid fa-language"></i></button>
+      <div class="dropdown-content">
+        <div id="google_translate_element"></div>
+      </div></div>
+      <div class="dropdown">
+        <button class="dropbtn">     
+      Services</button>
+      <div class="dropdown-content">
+        <a href="entertiment.html">Entertainments</a>
+        <a href="beauty.html">Beuaty</a>
+
+      </div></div>
+      <a href="reservation.html">Reservation</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="index1.html">Home</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="fa-solid fa-bars"></i></a>
+    </div>
+      
+   
+      <div class="cart">
+        <div class="cart-title">Cart</div>
+        <div class="cart-content">
+
+        </div>
+       
+      <div class="total">
+        <div class="total-title">Total :</div>
+        <div class="total-price">Rs.0 </div>
+      </div>
+
+      <a href="success-page.html">   <button class="caret">Place Order</button></a>
+      <p class="nested">
+
+      <button class="billBtn2">Online Payment</button>
+      <button class="billBtn1">Restaurant Wallet</button>
+      </p>
+  
+
+   
+      <i class="fa-solid fa-xmark"id="cart-close"></i>
+
+      </div>
+
+
+   
+  </header><BR>
+    <div class="selectFood">
+    <span><i class="fa-solid fa-utensils" ><p id="topTitle" >FOODS</p>
+    </i></span><br>
+    <span class="tablink" onclick="openPage('veg', this, '')" id="defaultOpen"><i class="fa-solid fa-bowl-food"><p class="menuTop">VEG</p></i></span>
+    <span class="tablink" onclick="openPage('nonveg', this, '')" ><i class="fa-solid fa-drumstick-bite"><p class="menuTop" >NON-VEG</p></i></span>  
+    <span class="tablink" onclick="openPage('DESSERT', this, '')" ><i class="fa-solid fa-ice-cream"><p class="menuTop">DESSERT</p></i></span>
+    <span class="tablink" onclick="openPage('child', this, '')" ><i class="fa-solid fa-child"><p class="menuTop">CHILD</p></i></span>
+    <span class="tablink" onclick="openPage('HEALTHY', this, '')" ><i class="fa-brands fa-pagelines"><h1 class="menuTop"><b>PATIENT</b></h1></i></span>
+  </div>
+
+  <div id="veg" class="tabcontent">
+    <h1 class="menuTypes">-: VEG MENU :-</h1>
+  <h1 class="menuSection">STARTER</h1>
+  <div id="menuDiv">
+  
+    <div class="shop-content">
+      <div class="food-box">
+        <div class="pic">
+          <img src="Baby Chilly.jpg" class="food-img">
+        </div>
+        <h2 class="food-title">Babycorn Chilly</h2>
+        <span class="food-price">Rs.40</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+    </div>
+
+
+    <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Gobi65.jpg" class="food-img"></div>
+        <h2 class="food-title">Babycorn 65</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+    </div>
+  
+     
+    <div class="shop-content">
+    <div class="food-box">
+        <div class="pic"><img src="Mushroom 65.jpg" class="food-img"></div>
+        <h2 class="food-title">Mushroom65</h2>
+        <span class="food-price">Rs.110</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+    </div>
+
+    <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Finger Chips.jpg" class="food-img"></div>
+        <h2 class="food-title">Finger Chips</h2>
+        <span class="food-price">Rs.55</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+    </div>
+  
+    <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Gobi Chilly.jpg" class="food-img"></div>
+        <h2 class="food-title">Gobi Chilly</h2>
+        <span class="food-price">Rs.25</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+    </div>
+  
+    <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Paneer 65.jpg" class="food-img"></div>
+        <h2 class="food-title">Paneer 65</h2>
+        <span class="food-price">Rs.150</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+  </div>
+  
+
+  <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Gobi Manchurian.jpg" class="food-img"></div>
+        <h2 class="food-title">Gobi Manchurian</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+  </div>
+
+  <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Masala Papad.jpg" class="food-img"></div>
+        <h2 class="food-title">Masala Papad</h2>
+        <span class="food-price">Rs.30.</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+  </div>
+
+  <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Kaju Fry.jpg"  class="food-img"></div>
+        <h2 class="food-title">Kuju Fry</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+  </div>
+  
+  <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Tomato soup.jpg"  class="food-img"></div>
+        <h2 class="food-title">Tomato Soup</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+  </div>
+
+  
+  <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Sweet Corn Soup.jpg.jpg" class="food-img"></div>
+        <h2 class="food-title">Sweet Corn Soup</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+  </div>
+  
+
+  <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Mushroom Manchurian.jpg" class="food-img"></div>
+        <h2 class="food-title">Mushroom gobi</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+  </div>
+
+
+  <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Veg Manchurian.jpg" class="food-img"></div>
+        <h2 class="food-title">Veg Manchurian</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+  </div>
+
+
+  <div class="shop-content"> 
+      <div class="food-box">
+        <div class="pic"><img src="Paneer Chilly.jpg" class="food-img"></div>
+        <h2 class="food-title">Paneer Chilly</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+  </div><br><br>
+  </div>
+
+  
+
+  
+
+ 
+<h1 class="menuSection">MAINS</h1>
+<div id="menuDiv">
+        
+    <div class="shop-content">
+       
+      <div class="food-box">
+        <div class="pic">
+          <img src="Dal Kolhapuri.jpg" class="food-img">
+        </div>
+        <h2 class="food-title">Dal Kolhapuri</h2>
+        <span class="food-price">Rs.40</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+    </div>
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="kulcha.jpg" class="food-img"></div>
+        <h2 class="food-title">Kulcha</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+      <div class="shop-content">
+   <div class="food-box">
+        <div class="pic"><img src="Masala Rice.jpg" class="food-img"></div>
+        <h2 class="food-title">Masala Rice</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="mushroom kolhapuri.jpg" class="food-img"></div>
+        <h2 class="food-title">Mushroom Kolhapuri</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Dal Fry.jpg" class="food-img"></div>
+        <h2 class="food-title">Dal Fry</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Mushroom Masala.jpg" class="food-img"></div>
+        <h2 class="food-title">Mushroom Masala</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+      
+
+      <div class="shop-content">
+         <div class="food-box">
+        <div class="pic"><img src="Mushroom Pepper.jpg" class="food-img"></div>
+        <h2 class="food-title">Mushroom Paper</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="MushroomSezwan Rice.jpg" class="food-img"></div>
+        <h2 class="food-title">Mushroom Rice</h2>
+        <span class="food-price">Rs.80</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Palak Panner.jpg" class="food-img"></div>
+        <h2 class="food-title">Palak Paneer</h2>
+        <span class="food-price">Rs.55</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Paneer Fride Rice.jpg" class="food-img"></div>
+        <h2 class="food-title">Paneer Fried Rice</h2>
+        <span class="food-price">Rs.25</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Roti.jpg" class="food-img"></div>
+        <h2 class="food-title">Roti</h2>
+        <span class="food-price">Rs.150</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Veg Bhuna Masala.jpg" class="food-img"></div>
+        <h2 class="food-title">Egg Veechu15</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Veg Biriyani.jpg" class="food-img"></div>
+        <h2 class="food-title">Veg Bhuna Masala</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Veg Hakka Noodles.jpg" class="food-img"></div>
+        <h2 class="food-title">Veg Hakka Noodles</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Veg Hongkong Fride Rice.jpg"class="food-img"></div>
+        <h2 class="food-title">Veg Hongkong Fride Rice</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Veg Hydrabadi.jpg" class="food-img"></div>
+        <h2 class="food-title">Veg Hydrabadi</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Veg Jaipuri.jpg" class="food-img"></div>
+        <h2 class="food-title">Veg Jaipuri</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  </div>
+  </div>
+<div id="DESSERT" class="tabcontent">
+  <h1 class="menuTypes">-: DESSERT :-</h1>
+<h1 class="menuSection">DESSERT</h1>
+<div id="menuDiv">
+        
+    <div class="shop-content">
+       
+      <div class="food-box">
+        <div class="pic">
+          <img src="cheese.jpg" class="food-img"></div>
+        <h2 class="food-title">Cheese</h2>
+        <span class="food-price">Rs.40</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+    </div>
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="mix.jpg" class="food-img"></div>
+        <h2 class="food-title">MIX</h2>
+        <span class="food-price">Rs.55</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="gudbud.jpg" class="food-img"></div>
+        <h2 class="food-title">Gudbud</h2>
+        <span class="food-price">Rs.80</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Mango Falooda.jpg" class="food-img"></div>
+        <h2 class="food-title">Mango Falooda</h2>
+        <span class="food-price">Rs.55</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="kheer.jpg" class="food-img"></div>
+        <h2 class="food-title">KHEER</h2>
+        <span class="food-price">Rs.45</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+     <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Green Salads.jpg" class="food-img"></div>
+        <h2 class="food-title">Green Salad</h2>
+        <span class="food-price">Rs.150</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+     </div>
+  
+     <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="mocktail.jpg"  class="food-img"></div>
+        <h2 class="food-title">Mocktail</h2>
+        <span class="food-price">Rs.55</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+     </div>
+  
+  
+     <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Strawberry Falooda.jpg" class="food-img"></div>
+        <h2 class="food-title">Strawberry Falooda</h2>
+        <span class="food-price">Rs.35</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+     </div>
+
+     <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Trifle.jpg" class="food-img"></div>
+        <h2 class="food-title">Trifle</h2>
+        <span class="food-price">Rs.75</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+     </div>
+
+
+     <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Tiramisu.jpg" class="food-img"></div>
+        <h2 class="food-title">Tiramisu</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+     </div>
+
+     <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="ice-cream sandwiches.jpg" class="food-img"></div>
+        <h2 class="food-title">Ice Cream</h2>
+        <span class="food-price">Rs.85</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+     </div>
+
+
+   
+</div>
+</div>
+      
+
+    </div>
+    <div id="nonveg" class="tabcontent">
+      <h1 class="menuTypes">-: NON-VEG MENU :-</h1>
+        <h1 class="menuSection">STARTER</h1>
+        <div id="menuDiv"> 
+            
+        <div class="shop-content">
+           
+          <div class="food-box">
+            <div class="pic">
+              <img src="boiledegg.jpg" class="food-img">
+            </div>
+            <h2 class="food-title">Boiledegg</h2>
+            <span class="food-price">Rs.40</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+    
+      
+      
+
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="hyderabadi-chicken-masala.jpg" class="food-img"></div>
+            <h2 class="food-title">Hyderabadi Chicken M</h2>
+            <span class="food-price">Rs.80</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+      
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="eggomlet.jpg" class="food-img"></div>
+            <h2 class="food-title">Egg Omlet</h2>
+            <span class="food-price">Rs.55</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+      
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="eggmanchurian.jpg" class="food-img"></div>
+            <h2 class="food-title">Egg Manchurian</h2>
+            <span class="food-price">Rs.25</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+      
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="eggchilly.jpg" class="food-img"></div>
+            <h2 class="food-title">Egg Chilly</h2>
+            <span class="food-price">Rs.150</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+      
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="egg65.jpg" class="food-img"></div>
+            <h2 class="food-title">Egg 65</h2>
+            <span class="food-price">Rs.65</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+      
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="eggbhurji.jpg" class="food-img"></div>
+            <h2 class="food-title">Egg Bhurji</h2>
+            <span class="food-price">Rs.65</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+    
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="chickengarlic.jpg" class="food-img"></div>
+            <h2 class="food-title">Chicken Garlic</h2>
+            <span class="food-price">Rs.65</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="chickenlollypop.jpg" class="food-img"></div>
+            <h2 class="food-title">Chickenlollypop</h2>
+            <span class="food-price">Rs.65</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="chickenpepper.jpg" class="food-img"></div>
+            <h2 class="food-title">Chicken pepper</h2>
+            <span class="food-price">Rs.85</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="chickenpepper.jpg" class="food-img"></div>
+            <h2 class="food-title">Chicken Pepper</h2>
+            <span class="food-price">Rs.85</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="chickenschewan.jpg" class="food-img"></div>
+            <h2 class="food-title">Chicken schewan</h2>
+            <span class="food-price">Rs.85</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+
+          
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="chicken-soup.jpg" class="food-img"></div>
+            <h2 class="food-title">Chicken soup</h2>
+            <span class="food-price">Rs.75</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+
+          
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="chillychicken.jpg" class="food-img"></div>
+            <h2 class="food-title">Chilly Chicken </h2>
+            <span class="food-price">Rs.65</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+    
+        </div>
+        
+      
+    
+        
+    <h1 class="menuSection">MAINS</h1>
+    
+    <div id="menuDiv">        
+        <div class="shop-content">
+           
+          <div class="food-box">
+            <div class="pic">
+              <img src="Dal Kolhapuri.jpg" class="food-img">
+            </div>
+            <h2 class="food-title">Dal Kolhapuri</h2>
+            <span class="food-price">Rs.120</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+    
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="Egg Biriyani.jpg" class="food-img"></div>
+            <h2 class="food-title">Egg biriyani</h2>
+            <span class="food-price">Rs.90</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+      
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="Egg Fried Rice.jpg" class="food-img"></div>
+            <h2 class="food-title">Egg Fried Rice</h2>
+            <span class="food-price">Rs.80</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+      
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="Chicken Biryani.jpg" class="food-img"></div>
+            <h2 class="food-title">Chocken Biriyani</h2>
+            <span class="food-price">Rs.160</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+      
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="Mutton Biriyani.jpg" class="food-img"></div>
+            <h2 class="food-title">Matton Biriyani</h2>
+            <span class="food-price">Rs.25</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+      
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="chicken curry.jpg" class="food-img"></div>
+            <h2 class="food-title">Chicken Curry</h2>
+            <span class="food-price">Rs.150</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+      
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="chickenkadai.jpg" class="food-img"></div>
+            <h2 class="food-title">Chicken Kadai</h2>
+            <span class="food-price">Rs.85</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+      
+        <div class="shop-content">
+          <div class="food-box">
+            <div class="pic"><img src="Chicken-Masala.jpg" class="food-img"></div>
+            <h2 class="food-title">Chicken Masala</h2>
+            <span class="food-price">Rs.95</span><br>
+            <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+          </div>
+        </div>
+    </div>  
+    </div>
+    </div> 
+    
+<div id="child" class="tabcontent">
+  <h1 class="menuTypes">-: CHILD :-</h1>
+<h1 class="menuSection">CHILD</h1>
+<div id="menuDiv">
+        
+    <div class="shop-content">
+       
+      <div class="food-box">
+        <div class="pic">
+          <img src="green gram rice.jpg" class="food-img"></div>
+        <h2 class="food-title">Green Gram Rice</h2>
+        <span class="food-price">Rs.60</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+    </div>
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="khichdi.jpg" class="food-img"></div>
+        <h2 class="food-title">Khichdi</h2>
+        <span class="food-price">Rs.85</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="moong dal khichdi.jpg" class="food-img"></div>
+        <h2 class="food-title">Moong Dal khichdi</h2>
+        <span class="food-price">Rs.80</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="rice porridge.jpg" class="food-img"></div>
+        <h2 class="food-title">Rice Porridge</h2>
+        <span class="food-price">Rs.55</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="urad dal khichdi.jpg" class="food-img"></div>
+        <h2 class="food-title">Urad Dal Khichdi</h2>
+        <span class="food-price">Rs.115</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+    
+</div>
+</div>
+
+    
+<div id="HEALTHY" class="tabcontent">
+  <h1 class="menuTypes">-: HEALTHY :-</h1>
+<h1 class="menuSection">HEALTHY</h1>
+<div id="menuDiv">
+        
+    <div class="shop-content">
+       
+      <div class="food-box">
+        <div class="pic">
+          <img src="eatTheRainbowChopped.jpg" class="food-img"></div>
+        <h2 class="food-title">RainbowChopped</h2>
+        <span class="food-price">Rs.50</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+    </div>
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Twelve Salad.jpg" class="food-img"></div>
+        <h2 class="food-title">Twelve Salad</h2>
+        <span class="food-price">Rs.65</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="dragon fruit.jpg" class="food-img"></div>
+        <h2 class="food-title">Dragon fruit</h2>
+        <span class="food-price">Rs.80</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="Mango Falooda.jpg" class="food-img"></div>
+        <h2 class="food-title">Mango Falooda</h2>
+        <span class="food-price">Rs.55</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+  
+
+      <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="kiwi smoothies.jpg" class="food-img"></div>
+        <h2 class="food-title">Kiwi Smoothies</h2>
+        <span class="food-price">Rs.105</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+      </div>
+
+     <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="summer fruit salad.jpg" class="food-img"></div>
+        <h2 class="food-title">summer fruit salad</h2>
+        <span class="food-price">Rs.150</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+     </div>
+
+     <div class="shop-content">
+      <div class="food-box">
+        <div class="pic"><img src="thanksgiving fruit salad.jpg" class="food-img"></div>
+        <h2 class="food-title">thanksgiving Salad</h2>
+        <span class="food-price">Rs.150</span><br>
+        <i class="fa-solid fa-circle-plus" id="add-cart"></i>
+      </div>
+     </div>
+  
+     
+</div>
+</div>
+    
+  <script src="menu.js"></script>
+  
+
+
+
+</body>
+</html>

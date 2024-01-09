@@ -1,0 +1,2 @@
+    <tr><td><img src="Chicken Biryani.jpg"></td><td>Chicken Biryani</td><td>200</td></tr>
+    <tr><td><img src="Mutton Biriyani.jpg"></td><td>Mutton Biryani</td><td>200</td></tr>
