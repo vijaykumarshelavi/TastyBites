@@ -1,0 +1,853 @@
+body  {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#fonth{
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  
+}
+
+/*********************************************** SECTION'S BLOCK************************************************/
+/******** SECTION'S NARMAL PAGE CODE *********/
+#Home{
+  width:100%;
+	height: 640px;
+}
+#Services{
+ width: 100%;
+ height: 350px;
+}
+#sheff{
+  width: 100%;
+	height: 780px;
+}
+#feedback{
+  width: 100%;
+  height: 780px;
+	
+}
+#about{
+  width: 100%;
+  height: 760px;
+}
+#contect{
+  width: 100%;
+  height: 600px;
+  background-color: #031a4b;
+}
+/******** SECTION'S RESPONS PAGE CODE *********/
+@media screen and (max-width: 600px) {
+  .Home{
+    width:100%;
+    height: 800px;
+  }
+  #Services{
+    width: 100%;
+    height: 1000px;
+   }
+  #sheff{
+    width: 100%;
+    height: 2400px;
+  }
+  #feedback{
+    width: 100%;
+    height: 1800px;
+    
+  }
+  #about{
+    width: 100%;
+    height:1000px;
+  }
+  #contect{
+    width: 100%;
+    height: 1200px;
+    background-color: #031a4b;
+  }
+}
+
+/*********************************************** INDEX PAGE BLOCK ************************************************/
+/************************** NAVBAR 2***********************/ 
+/******** NAVBAR NARMAL CODE *********/
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+.topnav {
+  overflow: hidden;
+  background-color:#031a4b;
+}
+.topnav a {
+  float: right;
+  display:block;
+  color:white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .hamIcon {
+  display: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color:white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+text-decoration: underline;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 0px 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/******** NAVBAR (RESPONS) CODE *********/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.hamIcon {
+    float: right;
+    display: block;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .hamIcon {
+    position: absolute;
+    right: 42px;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-top: 3px;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  #language{
+    margin-left: -120px;
+    margin-bottom: 10px;
+    position: absolute;
+  
+  }
+}
+
+/*********************************** HOME SECTION ******************************/ 
+ /******** HOME (NARMAL) SECTION CODE *********/ 
+ .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.mySlides{
+	padding:30px 10px;
+	}
+.image{
+	border:3px solid black;
+	height:500px;
+	border-radius: 8px;
+    box-shadow: 0 10px 8px 0 rgba(0, 0.4, 0.6, 0.4);
+} 
+ .homeColumn {
+	float: left;
+	width: 50%;
+  margin-top: 0px;
+	padding: 0 10px;
+  }
+  .homebtn{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: green;
+    box-shadow:  0px 6px 8px rgba(0, 0, 0, 0.705);
+    border-radius: 0px 15px;
+  }
+  .homebtn:hover{
+    background-color: #121212;
+    box-shadow: 0 8px 8px rgba(53, 227, 5, 0.625);
+  }
+  .homecard{
+    padding: 16px;
+    margin-top:150px;
+    } b
+  
+    .homecard1 {
+    padding: 16px;
+    margin-top:200px;
+    }
+  /******** HOME (RESPONS) SECTION CODE *********/ 
+  @media screen and (max-width: 600px) {
+	.homeColumn {
+	  width: 100%;
+	  display: block;
+	 margin-top: -90PX;
+	}
+  .homecard{
+    padding: 16px;
+    margin-top:100px;
+    } 
+  
+    .homecard1 {
+    padding: 16px;
+    margin-top:0;
+    }
+  }
+  /***********************************services section******************************/ 
+  * {
+    box-sizing: border-box;
+  }
+  .servicesColumns{
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+    margin-top: 80px;
+
+  }
+  .servicesCard {
+  
+    text-align: center;
+  
+  }
+  @media screen and (max-width: 600px) {
+    .servicesColumns {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+ 
+/***********************************about section******************************/ 
+ /******** ABOUT (NARMAL) SECTION CODE *********/ 
+.aboutColumn {
+  float: left;
+  width: 48%;
+  padding: 0 10px;
+  }
+  .aboutImageCard{
+    padding: 16px;
+    margin-left: 100px;
+  }
+  .aboutImageHide{
+    width: 80%;
+    height: 70%;
+   margin-top: 0px;
+  } 
+  .aboutTextCard{
+    margin-top: 100px;
+    margin-left: 0px;
+    width: 100%;
+    height: 300px;
+    } 
+  .about-text{
+    float: left;
+    font-size: 25px;
+  }
+  
+  /******** ABOUT (RESPONS) SECTION CODE *********/ 
+  @media screen and (max-width: 600px) {
+  .aboutColumn {
+  width: 100%;
+  margin-bottom: 0px;
+  }
+  .aboutImageCard{
+    padding: 5px;
+    margin-left: -10px;
+  }
+  .aboutImageHide{
+    width:100%;
+    height:100%;
+   margin-top: 0px;
+  }
+  .aboutTextCard{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;  
+  } 
+  .about-text{
+  float: left;
+  font-size: 22px;
+  }
+}
+
+/***********************************FEEDBACK section******************************/ 
+ /******** FEEDBACK (NARMAL) SECTION CODE *********/      
+.feedColumn {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-top: 8%;
+ }
+.double{
+margin-left: -20px;
+margin-top: -18px;
+width:50px;
+float: left;
+transform:rotate(180deg) ;
+}
+.img{
+  margin-left: -200px;
+   margin-top: 25px;
+   opacity: 0.8;
+   width:50px;
+   height:50px;
+   border-radius: 50%;
+}
+.feedCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 340px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  background-color: #f1f1f1;
+}
+  .feedCard:hover{
+  transform: scale(1.1);
+  background-color: rgb(172, 172, 220);
+  box-shadow: 100px;
+}
+.h3{
+  margin-top: -40px;
+  margin-left: 25px;
+  font-size: 25px;
+  
+}
+ /******** FEEDBACK (RESPONS) SECTION CODE *********/ 
+@media screen and (max-width: 600px) {
+.feedColumn {
+width: 100%;
+display: block;
+margin-bottom: 30px;
+}
+}
+
+/*********************************** SHEFF SECTION ******************************/ 
+ /******** SHEFF (NARMAL) SECTION CODE *********/      
+ 
+ .card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
+}
+.card {
+	width: 300px;
+	margin: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692);
+	transition: transform 0.3s ease-in-out;
+	overflow: hidden;
+	border-radius: 15px;
+	padding: 10px;
+}
+.card:hover {
+	transform: scale(1.1);
+	box-shadow: 0 8px 8px rgba(53, 227, 5, 0.625);
+}
+.card img {
+	width: 250px;
+	height: 250px;
+	box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.705);
+	margin-left:15px;
+	margin-left:15px;
+	border-radius:50%;
+	padding:10px;
+}
+.card-content {
+	padding: 15px;
+}
+/***********************************CONTECT SECTION******************************/ 
+ /******** CONTECT (NARMAL) SECTION CODE *********/    
+ 
+ 
+ .double{
+  margin-left: -20px;
+  margin-top: -10px;
+  width:50px;
+  float: left;
+  transform:rotate(180deg) ;
+}
+/* Float four columns side by side */
+.conColumn {
+float: left;
+width: 32%;
+padding: 0 10px;
+
+}
+
+.font{
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
+  color:#db522c;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .conColumn {
+    width: 100%;
+    display: block;
+  margin-bottom: 0px;
+  }
+}
+.conCard {
+  float:right;
+ margin-top: 20%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  
+}
+
+.contectTextBlink{
+  text-align: center;
+    margin-top: 30px;
+    color:#ababab;
+    font-size: 18px;
+    font-weight:bold ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#icons{
+ padding: 10px;
+  width: 40px;
+}
+
+.icon{
+  width: 35px;
+  height: 35px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  border:2px solid white;
+  border-radius: 30px;
+  color: #fcf6f6;
+  padding: 8px;
+  margin-top: 30px;
+
+  
+ 
+} 
+.icon:hover{
+  background-color: #f7f1f1;
+  color: #9d7310;
+}
+
+/*************************************************                *************************************************/
+/************************************************* INDEX HOME END *************************************************/
+
+
+
+/***********************************************           ****************************************************/
+/*********************************************** MENU PAGE ****************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+/******** NAVBAR CART ICON (NARMAL) CODE********/
+.box{
+  float: right;
+  margin-right: 10px;
+ margin-top: 15px;
+  color:white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.cart-count{
+  position: absolute;
+  background-color: #2f3542;
+  top: -5px;
+  right: 0;
+  padding: 3px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+ }
+
+
+#admin{
+  float: right;
+  margin-right: 5px;
+  font-size: 20px;
+ 
+}
+/******** NAVBAR CART ICON (respons) CODE********/
+@media screen and (max-width: 600px) {
+  .box{
+    float: left ;
+    margin-left: 69%;
+    margin-top: 5PX;
+    color:white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    position: relative;
+  }
+}
+/******** MENU FOOD DETAILS (NARMAL) CODE********/
+img{
+  width: 100%;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-top: 50px;
+}
+
+.food-box{
+  margin: 10px;
+  position: relative;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 10px 8px 0 rgba(0, 0.6, 0.6, 0.6);
+  border-radius: 20px;
+  width: 260px;
+   transition: 0.4s;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.pic{
+  overflow: hidden;
+}
+
+.pic:hover img{
+transform: scale(1.5);
+}
+
+.food-img{
+  transition: 0.4s;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.food-title{
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color:#ff6348;
+}
+
+.food-price{
+  padding: 10px;
+  font-weight:500 ;
+}
+
+.add-cart{
+  width: 100%;
+ height: 30px;
+ border-radius: 20px;
+  background-color:green;
+  color:white;
+  padding: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.add-cart:hover{
+  background-color:rgba(255, 0, 0, 0.786);
+}
+/******** MENU FOOD DETAILS (RESPONS) CODE********/  
+@media screen and (max-width: 600px) {
+
+
+}
+/******** ADD CART FOOD BOX(NARMAL) CODE********/ 
+.cart{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 10px 8px 0 rgba(0, 0.6, 0.6, 0.6);
+  z-index: 100;
+}
+
+.cart-active{
+  right:0;
+  transition: 0.5s;
+}
+
+
+.cart-title{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: green;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.cart-box{
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+}
+
+.cart-img{
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border:2px solid  rgba(0,0,0,0.1);
+  padding: 5px;
+}
+.detail-box{
+  display: grid;
+  row-gap: 0.5rem;  
+}
+
+.price-box{
+  display: flex;
+    justify-content: space-between; 
+}
+
+.cart-food-title{
+   font-size: 1rem;
+   text-transform: uppercase;
+   color:#ff6348;
+   font-weight: 500;
+}
+
+.cart-price{
+  font-weight: 500;
+}
+
+.cart-quantity{
+  border:1px solid rgba(0,0,0,0.1);
+  outline:none ;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove{
+  width: 30px;
+  height: 30px;
+  color:red;
+  cursor: pointer;
+}
+
+.total{
+  float: left;
+  margin-top: 50px;
+  
+}
+/******** ADD CART FOOD BOX(NARMAL) CODE********/ 
+@media screen and (max-width: 600px) {
+  .cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 375px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 10px 8px 0 rgba(0, 0.6, 0.6, 0.6);
+    z-index: 100;
+  }
+  
+  .cart-active{
+    right:0;
+    transition: 0.5s;
+  }
+}
+
+
+.total-title{
+    float: left;
+    margin-top: 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+
+.total-price{
+    float: left;
+    margin-top: 13px;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.btn-buy{
+    margin-top: 8px;
+  float:right;
+  padding: 12px 20px;
+  background-color:green;
+  color:#fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 20px;
+  }
+
+#cart-close{
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+
+  .tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+
+
+  
+/* Center the image and position the close button */
+.imgcontainer {
+  width: 40px;
+   height: 40vh;
+   text-align: center;
+   margin: 24px 0 12px 0;
+   position: relative;
+ }
+   
+ .modal {
+   display: none; 
+   position: fixed; 
+   z-index: 1; 
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%; 
+   overflow: auto; 
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+   padding-top: 60px;
+ }
+ 
+ 
+ .modal-content {
+   background-color: #fefefe;
+   margin: 5% auto 15% auto; 
+   border: 1px solid #888;
+   width: 80%;
+ }
+ .container{
+  height: 300px;
+  border: 2px solid rgba(0, 0, 0, 0.262);
+  box-shadow: 0 10px 8px 0 rgba(0, 0.6, 0.6, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+ }
+#balance{
+  text-align: center;
+  font-size:23px;
+}
+#withdraw{
+  margin-top: 20px;
+  margin-left: 32%;
+  width: 120px;
+  height: 25px;
+  text-align: center;
+  background-color: rgba(0, 128, 0, 0.537);
+  border-radius: 10px;
+
+}
+#placeOrder{
+ font-size: 20px;
+  color: white;
+  margin-top: 50px;
+   
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(245, 9, 9, 0.805);
+  border-radius: 15px;
+}
+
+.total-title1{
+  float: left;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  margin-left: 32%;
+}
+
+#amount{
+  float: right;
+  margin-right: 28%;
+  font-size:1.4rem;
+  margin-top: 10px;
+}
+
+#message{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
